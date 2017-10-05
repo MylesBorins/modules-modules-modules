@@ -11,6 +11,18 @@ html
     .hello {
       background-image: url('images/hello-tharr.gif')
     }
+    .nye {
+      background-image: url('images/nye.gif')
+    }
+    .flag {
+      background-image: url('images/flag.gif')
+    }
+    .grumpy {
+      background-image: url('images/grumpy.gif')
+    }
+    .gethere {
+      background-image: url('images/gethere.gif')
+    }
 
   body
 
@@ -18,7 +30,7 @@ html
 
       section
         h2 Modules Modules Modules:
-        h4 With your host
+        h3 With your host
         h4
           a(href='https://twitter.com/MylesBorins') @MylesBorins
         p  Node Interactive 2017
@@ -39,13 +51,29 @@ html
         h5.headroom The opinions expressed in this talk are solely my own
       
       section
-        h1 Shout out to Brad Farias
+        h2 Thank you Brad Farias
+        img.headroom(src='images/brad.jpg' alt='THANK YOU BRAD' style='background-color:white;')
 
-      section
+      section(data-bespoke-backdrop='nye')
         h1 You can use ESM in Node.js Today!
 
+      section(data-bespoke-backdrop='flag')
+        h2 --experimental-modules
+
       section
-        h1 A quick history lesson
+        h2 About our current implementation
+        ul
+          li.hide
+          li Files have .mjs extension
+          li Support for Bare Imports
+          li You can import common.js
+          li You cannot require ESM
+          li Dynamic Import Coming Soon
+
+      section(data-bespoke-backdrop='grumpy')
+        h2 Some of our decisions may have made people grumpy
+
+      section(data-bespoke-backdrop='gethere')
 
       section
         h1 ES4 introduced the concept of packages

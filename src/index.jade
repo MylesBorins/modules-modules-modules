@@ -23,6 +23,40 @@ html
     .gethere {
       background-image: url('images/gethere.gif')
     }
+    .package {
+      background-image: url('images/package.gif')
+    }
+    .heart {
+      background-image: url('images/heart.gif')
+    }
+    .spidey {
+      background-image: url('images/spidey.jpg')
+    }
+    .universe {
+      background-image: url('images/universe.gif')
+    }
+    .land {
+      background-image: url('images/land.gif')
+    }
+    .danger {
+      background-image: url('images/danger.gif')
+    }
+    .danger2 {
+      background-image: url('images/danger2.gif')
+    }
+    .danger3 {
+      background-image: url('images/danger.gif')
+    }
+    .babel {
+      background-image: url('images/babel.gif')
+    }
+    .lemon {
+      background-image: url('images/lemon.gif')
+    }
+    .lolwut {
+      background-image: url('images/lolwut.gif')
+    }
+
 
   body
 
@@ -75,69 +109,95 @@ html
 
       section(data-bespoke-backdrop='gethere')
 
-      section
-        h1 ES4 introduced the concept of packages
+      section(data-bespoke-backdrop='package')
+        h2 ES4 introduced
+        h3 the concept of packages
 
       section
         h2 Similar to c++ namespaces
         h3 Intent was to create something like the Java Jar System
 
-      section
-        h1 Ripped out of standards track and never seen again
+      section(data-bespoke-backdrop='heart')
+        h3 Ripped out of standards track
+        h2 Never seen again
 
       section
-        h2 CommonJS is intoduced with members of TC39 working on it.
-        h3 Not on standards tracks
-        h4 Intended for Serverside JS
+        h2 CommonJS is intoduced
+        h3 with members of TC39 working on it.
+        h4 Not on standards tracks
+        h5 Intended for Serverside JS
+
+      section(data-bespoke-backdrop='spidey')
+        h3 Node.js Implements
+        h2 a variant of CommmonJS
 
       section
-        h1 Node.js Implemented a variant of CommmonJS
-
-      section
-        h1 AMD Showed up on the scene
+        h1 Don't forget AMD
       
       section
         h2 Only "spec'd" by requireJS
         h3 More of a convention
 
-      section
+      section(data-bespoke-backdrop='universe')
         h1 Why not UMD?
 
-      section
-        h1 ESModules land in ecma262 in 2015
+      section(data-bespoke-backdrop='land')
+        h1 ESModules landed in ecma262 in 2015
 
       section
-        h1 The Loader is not specified
+        h2 The Loader is not specified
+        h3 Implemented by embedder
 
       section
-        h1 The Loader is implemented by embedder
-
-      section
-        h2 Generic term for workflow
+        h3 Loader is a generic term for a workflow
         ul
           li.hide
           li Fetch
           li Transform
           li Evaluation Hook
 
-      section
-        h1 DANGER
+      section(data-bespoke-backdrop='danger')
+        h3 ⚠️  DANGER  ⚠️
+        h2 Behavior Difference
+        h2 Will Robinson
+        h3 ⚠️  DANGER  ⚠️
 
       section
-        h3 ESModules
-        h2 Async Load ~ Sync Execution
+        h3 CommonJS has
+        h2 Synchronous Load
+        h2 +
+        h2 Inline Execution
+
+      section(data-bespoke-backdrop='babel')
+        h1 This is also what babel implements
 
       section
-        h3 CommonJS
-        h2 Sync Load + Inline Execution
+        h3 ESModules specify
+        h2 Asynchronous Load
+        h2 +
+        h2 Synchronous Execution
 
       section
-        h1 CommonJS + ESModules execute differently
+        h1 They are not interchangeable
 
+      section(data-bespoke-backdrop='lemon')
+        h1 Can result in different execution order
+
+      section(data-bespoke-backdrop='danger2')
+        h3 ⚠️  DANGER  ⚠️
+        h2 Behavior Difference
+        h2 Will Robinson
+        h3 ⚠️  DANGER  ⚠️
+
+      section
+        h1 The code executes differently too!
+        
       section
         h1 They have different goals
 
-      secton
+      section(data-bespoke-backdrop='lolwut')
+
+      section
         h3 In the ecmascript spec a “Goal” is a pairing
         h2 of a top-level grammar and top-level execution mode
 
@@ -147,7 +207,7 @@ html
           li.hide 
           li Script Strict
           li Script Sloppy
-          li ESmoules
+          li ESmodule
           li Node.js Goal
 
       section
@@ -165,11 +225,9 @@ html
           li Await is a reserved keyword
           li Divergence may increase over time
 
-      section 
-        h1 DANGER
-
       section
-        h2 ESModules do not have in source way of determining goal
+        h3 ESModules do not have in source way
+        h2 of determining goal
 
       section
         h2 Potential Future Goals
